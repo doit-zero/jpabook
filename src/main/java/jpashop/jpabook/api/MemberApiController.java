@@ -24,7 +24,7 @@ public class MemberApiController {
     }
 
 
-    // 외부에 노출할때는 항상 DTO를 만들기!! 강제로! 
+    // 외부에 노출할때는 항상 DTO를 만들기!! 강제로!
     @GetMapping("/api/v2/members")
     public Result memberV2(){
         List<Member> findMembers = memberService.findMembers();
